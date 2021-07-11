@@ -1,0 +1,222 @@
+/*
+Developer Info
+========
+Name: Shah Muhammad Jannatul Hasan
+Position: Frontend Web Developer
+Company: Netmark.no
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    @apply lg:text-lg text-base text-[#1D263A];
+}
+nav ul li{
+    @apply hover:text-primary;
+}
+.title{
+    font-family: 'Cantata One', serif;;
+}
+.button-primary,.btn-grp a{
+    @apply bg-primary px-8 py-3 lg:text-lg text-base font-semibold text-white hover:bg-[#ba3000];
+}
+.col-title h4{
+    @apply text-[22px] font-medium;
+}
+.social-icons a{
+    @apply opacity-50 hover:opacity-100 hover:text-primary;
+}
+.cols-group div{
+    max-width: 420px;
+}
+.btn-grp{
+    @apply flex justify-between ;
+}
+.btn-grp a{
+    @apply text-[#576867] text-xl bg-transparent hover:bg-primary rounded-xl hover:text-white;
+}
+.btn-grp a:last-child{
+    @apply text-primary hover:text-white;
+}
+.sec-title{
+    @apply lg:text-5xl text-3xl font-semibold leading-normal lg:w-11/12;
+}
+
+
+.mix-btns{
+    @apply flex flex-col md:flex-row justify-around pb-10 lg:pt-20 space-y-4 lg:space-y-0;
+}
+.mix-btns button{
+    @apply text-[#576867] text-xl font-semibold  hover:text-primary;
+    min-width: 50px;
+}
+.mixitup-control-active{
+    /* @apply text-primary;  */
+    color: #FF7343 !important;
+}
+
+.single-project{
+    position: relative;
+}
+.project-1{
+    @apply bg-[#1D5E6D];
+}
+.project-2{
+    background: linear-gradient(169.8deg, #FFD349 -36.57%, #EDB300 116.18%);
+}.project-3{
+    background: #E7ECEB;
+}
+.single-project *{
+    z-index: 100;
+}
+.project-title{
+    @apply pt-12 lg:pt-16 pb-8
+}
+.project-title h3{
+    @apply lg:text-[54px] text-3xl font-bold leading-tight;
+}
+.project-image-wrapper{
+    /* filter: drop-shadow(0px 56.1404px 56.1404px rgba(0, 0, 0, 0.12)); */
+}
+.single-project::after{
+    content: "";
+    width: 40%;
+    position: absolute;
+    top:-1px;
+    right: -1px;
+    bottom: 0px;
+    z-index: 1;
+    background-color: #D3EDF5;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+.category-b .single-project::after{
+    background-color: #FFFFFF;
+    opacity: .3;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
+}
+.img-margin{
+    margin-bottom: -3px;
+}
+.see-all i{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border: 1px solid #C7C6CE;
+    border-radius: 50px;
+}
+.cons-sec .id, .good-ux-sec .id{
+    @apply bg-primary block flex justify-center items-center rounded-full h-10 w-10 mr-5 text-white;
+}
+.good-ux-sec .id{
+    @apply bg-[#2E93FC];
+}
+.price-col{
+    @apply rounded-2xl lg:py-[60px] lg:px-8 p-10;
+}
+.price-col:hover{
+    background: linear-gradient(0deg, #2E93FC, #2E93FC);
+    box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.plan-name{
+    @apply text-2xl font-medium;
+}
+.price-col:hover ul li i{
+    color: white;
+}
+.plan-price{
+    @apply text-4xl font-medium;
+}
+.plan-details ul{
+    @apply text-lg space-y-6;
+}
+.plan-details ul li i{
+    color:rgba(10, 207, 131, 0.8);
+}
+.plan-btn{
+    @apply border-2 border-primary py-3 px-8 hover:bg-primary hover:text-white text-primary text-lg rounded-full font-semibold block text-center;
+}
+.price-col:hover .plan-btn{
+    @apply bg-primary text-white;
+}
+.get-start{
+    @apply text-white;
+}
+.btn{
+    @apply border-2 border-white py-3 px-8 text-white text-lg rounded-full font-semibold block text-center;
+}
+.splide__arrows{
+    @apply flex lg:justify-end justify-center space-x-6 lg:-mt-9;
+}
+.splide__arrow:hover {
+    fill: #FF7343;
+    border: 1px solid #FF7343;
+}
+.splide__arrow {
+    position: unset;
+    top: unset;
+    transform: unset;
+    background: transparent;
+    border: 1px solid transparent;
+}
+.splide__pagination__page.is-active {
+    @apply bg-primary;
+}
+.splide img{
+    height: 100%;
+    object-fit: cover;
+}
+.splide__slide .single-slide{
+    position: relative;
+}
+.splide__pagination{
+    @apply hidden;
+}
+.sub-div{
+    max-width: 65%;
+    position: absolute;
+    top: 82%;
+    right: 10%;
+}
+.member:hover{
+    color: white !important;
+}
+.member:hover p{
+    color:white !important;
+}
+.member img{
+    border-radius: 50px;
+    border: 4px solid transparent;
+}
+.member:hover img{
+    border: 4px solid white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+input, select, textarea{
+    background: #F4F5F9;
+    box-shadow: inset 0px -1px 0px #D9DADC;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1023px) {
+    .single-project::after{
+        display: none;
+    }
+    .h-full{
+        height: auto;
+    }
+    .no-p-on-small{
+        padding: 0;
+    }
+}

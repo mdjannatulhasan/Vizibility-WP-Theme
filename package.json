@@ -1,0 +1,18 @@
+{
+  "name": "Visibility",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/styles.css --jit",
+    "build3": "npx tailwindcss -o ./public/css/styles.css",
+    "build2": "npx tailwindcss -i ./src/tailwind.css -o ./public/css/styles.css --jit --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "tailwindcss": "^2.2.4"
+  }
+}
